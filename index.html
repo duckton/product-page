@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hannah's Plant&#8211;o&#8211;rama</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar has-shadow is-white">
+
+    <!-- Logo / Brand -->
+    <div class="navbar-brand">
+      <a class="navbar-item is-size-4">
+        <img src="hannahs-logo.jpg" alt="logo" height="32">
+      </a>
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="nav-links">
+      <div class="navbar-end">
+        <a class="navbar-item">My Account</a>
+        <a class="navbar-item">Shopping Cart (0)</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumbs -->
+
+  <div class="section pt-4 pb-0">
+    <nav class="breadcrumb is-small">
+      <ul class="container">
+        <li><a class="has-text-grey">Home</a></li>
+        <li><a class="has-text-grey">Shop</a></li>
+        <li class="is-active"><a>Succulents</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Product Information -->
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-4-tablet is-3-desktop">
+          <h1 class="is-size-2-desktop title">Desdemona</h1>
+          <h2 class="is-size-3-desktop subtitle">Rare Succulent</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit suscipit facere repellat tempora minima, quaerat! Illo blanditiis, a praesentium repellat eaque dolores alias similique id nisi cumque maxime possimus vitae magni eligendi asperiores, laboriosam rem!</p>
+        </div>
+        <div class="column is-8-tablet is-6-desktop">
+          <img src="plant1.jpg" alt="Desdemona Succulent" class="px-6">
+        </div>
+        <div class="column is-12-tablet is-3-desktop">
+          <div class="is-size-4 mb-4">$39.99</div>
+          <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, quam!</p>
+          <form>
+            <div class="field">
+              <div class="control">
+                <div class="select is-dark mr-2">
+                  <select>
+                    <option>Regular</option>
+                    <option>Man-eating</option>
+                  </select>
+                </div>
+                <button class="button hannah-green has-text-white">Add to Cart</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-8 is-variable">
+        <div class="column is-7-tablet">
+          <!-- Tabbed Content -->
+          <div class="tabs is-boxed">
+            <ul>
+              <li class="is-active" data-target="product-details">
+                <a>Product Details</a>
+              </li>
+              <li data-target="delivery-info">
+                <a>Delivery Information</a>
+              </li>
+            </ul>
+          </div>
+          <div class="px-2" id="tab-content">
+            <div id="product-details">
+              <h3 class="is-size-5 title">Plant Care</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quisquam, ducimus cumque dolorum possimus delectus soluta ab cupiditate quae consequatur, asperiores libero, esse. Maxime sint placeat suscipit temporibus magnam,
+                veritatis.</p>
+            </div>
+            <div id="delivery-info" class="is-hidden">
+              <h3 class="is-size-5 title">Delivery Information</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quisquam, ducimus cumque dolorum possimus delectus soluta ab cupiditate quae consequatur, asperiores libero, esse. Maxime sint placeat suscipit temporibus magnam,
+                veritatis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-5-tablet">
+          <!-- Message Box -->
+          <div class="message has-background-success-light">
+            <div class="message-header hannah-green">
+              <p>Earn points when you sign up for our rewards program.</p>
+            </div>
+            <div class="message-body">
+              <p><span class="has-text-weight-semibold">Push 'Sign up' to see the modal in action.</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid illum, maiores et, optio nemo dolorem ad eius assumenda quo perspiciatis laudantium eum quod molestias corporis harum voluptate in incidunt dolorum!</p>
+              <button id="signup" class="button hannah-green has-text-white mt-4">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products Cards -->
+
+  <section class="section is-hidden-mobile">
+    <div class="container">
+      <h3 class="title has-text-centered is-size-4">Related Products</h3>
+      <div class="columns is-centered mt-5 is-8 is-variable">
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card has-text-centered">
+            <div class="card-image pt-4">
+              <img src="plant2.jpg" alt="bike">
+            </div>
+            <div class="card-content">
+              <p>$4.99</p>
+              <p class="title is-size-5">Cretian</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a class="has-text-grey">View</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card has-text-centered">
+            <div class="card-image pt-4">
+              <img src="plant3.jpg" alt="bike">
+            </div>
+            <div class="card-content">
+              <p>$12.50</p>
+              <p class="title is-size-5">Minoan</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a class="has-text-grey">View</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card has-text-centered">
+            <div class="card-image pt-4">
+              <img src="plant4.jpg" alt="bike">
+            </div>
+            <div class="card-content">
+              <p>$10.99</p>
+              <p class="title is-size-5">Daedalus</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <a class="has-text-grey">View</a>
+              </p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content has-background-white p-5">
+      <h3 class="title mb-6">Join the Club</h3>
+      <form>
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input type="text" class="input" placeholder="Name">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input type="email" class="input" placeholder="Email">
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox">
+                I agree to the <a>terms and conditions.</a>
+              </label>
+            </div>
+          </div>
+          <div class="mt-4 has-text-centered">
+            <button class="button hannah-green has-text-white is-fullwidth">Sign Up</button>
+          </div>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="content has-text-centered has-text-grey">
+      <p>Photos by Stephanie Harvey on Unsplash.</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
